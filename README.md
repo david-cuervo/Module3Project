@@ -12,7 +12,8 @@ I used my recently learned SQL and hypothesis testing skills to complete this pr
 The notebook located in this repository includes the code that was used to complete this project. Functions were used for exploratory data analysis and for hypothesis testing. Some examples of the code used:
 
 T-Test
-` stats.ttest_ind(five_discount['Quantity'], no_discount['Quantity'], equal_var = False) `
+
+`stats.ttest_ind(five_discount['Quantity'], no_discount['Quantity'], equal_var = False)`
 
 Cohen's d
 `def Cohen_d(group1, group2):
@@ -32,9 +33,10 @@ Cohen's d
 Cohen_d(five_discount['Quantity'], no_discount['Quantity']) `
 
 Tukey Test
-`from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
-tukey_test = pairwise_tukeyhsd(region['Quantity'], region['ShipRegion'] )
+`from statsmodels.stats.multicomp import pairwise_tukeyhsd`
+
+`tukey_test = pairwise_tukeyhsd(region['Quantity'], region['ShipRegion'] )
 tukey_test._results_table`
 
 The notebook also contains several visualizations of the data and their relationships.
