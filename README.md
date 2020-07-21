@@ -16,6 +16,7 @@ T-Test
 `stats.ttest_ind(five_discount['Quantity'], no_discount['Quantity'], equal_var = False)`
 
 Cohen's d
+
 `def Cohen_d(group1, group2):
 
     diff = group1.mean() - group2.mean()
