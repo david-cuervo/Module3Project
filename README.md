@@ -28,9 +28,9 @@ Cohen's d
     
     d = diff / np.sqrt(pooled_var)
     
-    return d
+    return d`
     
-Cohen_d(five_discount['Quantity'], no_discount['Quantity']) `
+`Cohen_d(five_discount['Quantity'], no_discount['Quantity'])`
 
 Tukey Test
 
